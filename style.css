@@ -15,7 +15,6 @@ body {
     flex-direction: column;
 }
 
-/* Navbar */
 .navbar {
     background: rgba(15, 23, 42, 0.9);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -74,7 +73,6 @@ body {
     background: rgba(139, 92, 246, 0.15);
 }
 
-/* Main Content Layout */
 .main-content {
     flex-grow: 1;
     max-width: 1100px;
@@ -88,7 +86,6 @@ body {
     text-align: center;
 }
 
-/* Hero Section */
 .hero {
     max-width: 750px;
 }
@@ -133,7 +130,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Buttons */
 .btn-main {
     background: #8b5cf6;
     color: #ffffff;
@@ -153,6 +149,7 @@ body {
 .btn-main:hover {
     background: #7c3aed;
     transform: translateY(-2px);
+    color: #ffffff;
 }
 
 .btn-sub {
@@ -176,7 +173,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Cards Grid */
 .page-header {
     margin-bottom: 40px;
 }
@@ -256,7 +252,6 @@ body {
     color: #ffffff;
 }
 
-/* Documentation / Guide Layout */
 .doc-container {
     background: #111827;
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -328,18 +323,6 @@ body {
     gap: 6px;
 }
 
-.highlight-box {
-    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(31, 41, 55, 0.8));
-    border-color: rgba(139, 92, 246, 0.2);
-}
-
-.download-btns {
-    display: flex;
-    gap: 15px;
-    margin-top: 30px;
-}
-
-/* Single Tool Box */
 .single-tool-box {
     background: #111827;
     border: 1px solid rgba(255, 255, 255, 0.06);
@@ -382,7 +365,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Form */
 .form-grid {
     display: flex;
     flex-direction: column;
@@ -404,7 +386,6 @@ body {
     border-color: #8b5cf6;
 }
 
-/* Footer Centered */
 .footer {
     background: #080c14;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -420,7 +401,6 @@ body {
     text-align: center;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
