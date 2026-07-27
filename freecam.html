@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCam Studio - User Guide | Dush Hub</title>
+    <meta name="description" content="Complete user guide and connection instructions for FreeCam Studio. Turn your Android phone into a PC virtual webcam via Wi-Fi or USB.">
+    <meta name="keywords" content="freecam studio guide, android webcam, wifi webcam, usb debugging setup, dush hub">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fa-solid fa-code"></i> Dush<span>Hub</span></a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="software.html" class="active">Software</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" style="align-items: flex-start; text-align: left;">
+        <div class="doc-container">
+            <a href="software.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Software</a>
+            
+            <h1>FreeCam Studio - Complete User Guide</h1>
+            <p class="doc-subtitle">Turn your Android smartphone into a professional, high-quality virtual webcam using FreeCam Studio!</p>
+
+            <div class="guide-box">
+                <h3><i class="fa-solid fa-camera"></i> First-Time Setup: Granting Camera Permission</h3>
+                <p>When you open the app for the very first time, you need to grant permission to access your camera:</p>
+                <ul>
+                    <li><strong>Open the App:</strong> Tap and open the FreeCam Studio app on your Android phone.</li>
+                    <li><strong>Permission Popup:</strong> A prompt will appear on your screen asking: <em>"Allow FreeCam Studio to take pictures and record video?"</em></li>
+                    <li><strong>Grant Access:</strong> Tap <strong>"While using the app"</strong> or <strong>"Allow"</strong>. This allows the app to initialize your camera and start the live stream.</li>
+                </ul>
+            </div>
+
+            <div class="guide-box">
+                <h3><i class="fa-solid fa-wifi"></i> Method 01: Connecting via Wi-Fi (Wireless & Convenient)</h3>
+                <p>For this method, both your computer and your smartphone must be connected to the same Wi-Fi network (e.g., your home Wi-Fi router or your phone's Wi-Fi hotspot).</p>
+                <ol>
+                    <li><strong>Open the App:</strong> Open the FreeCam Studio app on your Android device. Note the IP Address displayed on the screen (e.g., 192.168.8.150).</li>
+                    <li><strong>Open the PC Client:</strong> Launch the FreeCam PC Client application on your computer.</li>
+                    <li><strong>Connect to the Stream:</strong> Enter your phone's IP address into the PC client and click <strong>WIFI</strong>.</li>
+                    <li><strong>Virtual Camera Ready:</strong> The PC client will receive the video stream and output it as a virtual webcam named <em>"FreeCam HD Webcam C200"</em>. You can now select this camera in Zoom, OBS, MS Teams, or any video app!</li>
+                </ol>
+            </div>
+
+            <div class="guide-box">
+                <h3><i class="fa-brands fa-usb"></i> Method 02: Connecting via USB Cable (High-Speed & Low Latency)</h3>
+                <p>If your Wi-Fi signal is weak or you want ultra-low latency with zero frame drops, you can connect via a USB cable using USB Debugging.</p>
+                <ol>
+                    <li><strong>Enable USB Debugging on your Phone:</strong>
+                        <ul>
+                            <li>Go to your phone's Settings -> About Phone.</li>
+                            <li>Tap on Build Number 7 times until it says "You are now a developer!"</li>
+                            <li>Go back to Settings -> Developer Options.</li>
+                            <li>Find and turn on USB Debugging.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Connect via USB & Click PC Client (First Time):</strong> Connect your Android phone to your PC using a USB cable. Open the FreeCam PC Client on your computer and click the USB connection button once. A Command Prompt (CMD) window will open to run adb.exe. A prompt will instantly appear on your phone screen asking "Allow USB debugging?". Tap Allow (and check "Always allow from this computer").</li>
+                    <li><strong>Finalize the USB Connection:</strong> Make sure the FreeCam Studio app is open and running on your Android phone. Click the USB connection button on the PC client one more time to successfully launch the stream.</li>
+                    <li><strong>Stream Active:</strong> The high-speed wired stream will now feed directly into the <em>"FreeCam HD Webcam C200"</em> virtual camera with zero delay.</li>
+                </ol>
+            </div>
+
+            <div class="guide-box highlight-box">
+                <h3><i class="fa-solid fa-lightbulb"></i> How to Use in Video Apps (Zoom, OBS, Meet, etc.)</h3>
+                <ol>
+                    <li>Open your video conferencing or streaming software (e.g., Zoom, OBS Studio, Google Meet, Discord).</li>
+                    <li>Go to Video Settings / Camera Selection.</li>
+                    <li>Choose <strong>"FreeCam HD Webcam C200"</strong> as your camera source. Your phone will now stream directly into the application as a professional virtual webcam!</li>
+                </ol>
+            </div>
+
+            <div class="download-btns">
+                <button onclick="alert('PC Client downloading...')" class="btn-main"><i class="fa-solid fa-download"></i> Download PC Client</button>
+                <button onclick="alert('Android APK downloading...')" class="btn-sub"><i class="fa-brands fa-android"></i> Download Android APK</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Dush Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
